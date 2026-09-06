@@ -1,7 +1,7 @@
 from datetime import datetime
 import sys
 
-name = input("Wat is uw naam? ").capitalize()
+input("Wat is uw naam? ").capitalize()
 gender = input("Wat is uw gender? (m/v/x) ").strip().lower()
 salutation = f"Beste meneer {name}" if gender == "m" else f"Beste mevrouw {name}" if gender == "v" else f"Beste speler {name}"
 print(salutation)
@@ -50,7 +50,7 @@ if inzet < minimale_inzet:
    print(f"Uw inzet is €{inzet:.2f}")
 if inzet > minimale_inzet:
     print()
-    print("==========Let's play, place your bet and choose on of the following options=========")
+    print("==========  Let's play, place your bet and choose on of the following options  =========")
 else:
     print("U heeft helaas te weinig saldo,")
     print()

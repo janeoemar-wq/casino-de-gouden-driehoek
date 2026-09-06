@@ -1,7 +1,7 @@
 from datetime import datetime
 import sys
 
-input("Wat is uw naam? ").capitalize()
+name = input("Wat is uw naam? ").capitalize()
 gender = input("Wat is uw gender? (m/v/x) ").strip().lower()
 salutation = f"Beste meneer {name}" if gender == "m" else f"Beste mevrouw {name}" if gender == "v" else f"Beste speler {name}"
 print(salutation)
@@ -76,7 +76,7 @@ while True:
     # Stoppen bij 0
 
     if choice == 0:
-        print(f"Beste {salutation}, u heeft het spel gestopt. bedankt voor het spelen")
+        print(f"{salutation}, u heeft het spel gestopt. Bedankt voor het spelen.")
         print(f"Uw saldo is: €{rekening:.2f}")
         print("Tot de volgende keer bij Casino de Gouden Driehoek!")
         break
